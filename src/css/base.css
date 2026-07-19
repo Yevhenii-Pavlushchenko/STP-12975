@@ -1,11 +1,11 @@
 :root {
-  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-jakarta:"Plus Jakarta Sans";
   --font-inter: 'Inter', sans-serif;
 
   --black-color: #000000;
   --white-color: #ffffff;
-  --bronze-color: #9a8270;
-  --orange-color: #f38c28;
+  --accent-color: #0d9e8f;
+  --text-color: rgba(0, 0, 0, 0.9);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,8 +29,8 @@ body {
   margin: 0;
   padding-top: 79px;
   font-family: var(--font-inter);
-  background-color: var(--black-color);
-  color: var(--white-color);
+  color: var(--black-color);
+  background-color: var(--white-color);
 }
 body[data-scroll='false'] {
   overflow: hidden;

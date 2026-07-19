@@ -9,11 +9,10 @@
 /* Sections style */
 @import url('./styles-section/header.css');
 @import url('./styles-section/hero.css');
-@import url('./styles-section/gameplay.css');
-@import url('./styles-section/modes.css');
-@import url('./styles-section/features-intro.css');
-@import url('./styles-section/features-details.css');
+@import url('./styles-section/how-it-works.css');
+@import url('./styles-section/features.css');
 @import url('./styles-section/reviews.css');
+@import url('./styles-section/contacts.css');
 @import url('./styles-section/footer.css');
 @import url('./styles-section/mobile-menu.css');
 
