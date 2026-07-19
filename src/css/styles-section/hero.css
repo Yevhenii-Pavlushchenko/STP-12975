@@ -1,0 +1,133 @@
+.hr_hero {
+  padding: 10px 0 0 0;
+
+  @media only screen and (min-width: 1440px) {
+        padding: 189px 0 152px 0;
+
+    }
+
+}
+.hr_hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 375px;
+  margin: 0 auto;
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-wrapper {
+    max-width: 1440px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.hr_hero-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-title-wrapper {
+    max-width: 567px;
+    padding: 0 0 0 102px;
+  }
+}
+
+.hr_hero-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-title {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+.hr_hero-subtitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+
+.hr_hero-story-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-story-wrapper {
+    margin-bottom: 40px;
+  }
+}
+
+.hr_hero-story-wrapper p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.hr_hero-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: var(--orange-color);
+  color: var(--black-color);
+  font-weight: 900;
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hr_hero-btn:hover {
+  background-color: var(--bronze-color);
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-btn {
+    width: 454px;
+    align-self: flex-start;
+      font-size: 20px;
+  }
+}
+
+.hr_hero-img-wrapper {
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hr_hero-img-wrapper {
+    max-width: 720px;
+    margin: 0;
+  }
+}
+
+.hr_hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

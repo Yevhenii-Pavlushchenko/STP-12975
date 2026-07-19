@@ -1,0 +1,148 @@
+
+
+.mds_modes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+@media screen and (min-width: 1440px) {
+  .mds_modes-container {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+    gap: 60px;
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+  .mds_modes-content {
+    flex-grow: 1;
+    max-width: 710px;
+  }
+}
+
+.mds_modes-title {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1440px) {
+  .mds_modes-title {
+    font-size: 50px;
+    max-width: 500px;
+
+  }
+}
+
+.mds_modes-tagline {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1440px) {
+  .mds_modes-tagline {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+}
+
+.mds_modes-subtitle {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .mds_modes-subtitle {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+}
+
+.mds_modes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .mds_modes-list {
+      gap: 10px;
+      margin-bottom: 30px;
+  }
+}
+
+.mds_modes-item {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (min-width: 1440px) {
+  .mds_modes-item {
+    font-size: 20px;
+    gap: 20px;
+  }
+}
+
+.mds_modes-item::before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-color: var(--orange-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+@media screen and (min-width: 1440px) {
+  .mds_modes-item::before {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.mds_modes-description {
+  max-width: 648px;
+  font-size: 14px;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  opacity: 0.9;
+}
+@media screen and (min-width: 1440px) {
+  .mds_modes-description {
+    font-size: 20px;
+  }
+}
+
+.mds_modes-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  .mds_modes-preview {
+    flex-shrink: 0;
+    width: 282px;
+    height: 472px;
+  }
+}
+
+.mds_modes-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .mds_modes-img {
+    width: 282px;
+    height: 472px;
+    object-fit: contain;
+  }
+}
