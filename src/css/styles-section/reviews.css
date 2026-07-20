@@ -1,0 +1,201 @@
+.rev {
+  padding: 50px 0;
+    background-color: var(--black-color);
+    position: relative;
+    overflow: hidden;
+  @media only screen and (min-width: 1440px) {
+    padding: 100px 0;
+  }
+}
+.rev__glow {
+  position: absolute;
+  /* Центруємо елемент рівно по середині секції */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* Параметри форми з Фігми (пропорції еліпса 1139x385) */
+  width: 280px;
+  height: 150px;
+  background-color: #334c82;
+  border-radius: 50%;
+  filter: blur(60px);
+  /* М'яке розмиття для мобільних */
+
+  z-index: 1;
+  /* Лежить під контентом */
+  pointer-events: none;
+  will-change: transform;
+
+  @media only screen and (min-width: 1440px) {
+    /* Точні розміри та розмиття з вашого скриншоту Фігми */
+    width: 1140px;
+    height: 550px;
+    filter: blur(154px);
+  }
+}
+
+/* Переконуємося, що текст та картки лежать вище свічення */
+.rev__title,
+.rev__slider {
+  position: relative;
+  z-index: 2;
+}
+
+.rev__title {
+  font-family: var(--font-jakarta);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.rev__slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+
+  @media only screen and (min-width: 1440px) {
+    overflow: visible;
+    padding-bottom: 0;
+  }
+}
+
+.rev__wrapper {
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 calc((100% - 258px) / 2);
+    gap: 32px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    overflow-x: visible;
+    padding: 0;
+  }
+}
+
+.rev__item {
+  box-sizing: border-box;
+  background-color: var(--white-color);
+  border: 1px solid rgba(15, 32, 68, 0.08);
+  border-radius: 32px;
+  padding: 32px 32px;
+  flex-shrink: 0;
+  width: 258px;
+  scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 1440px) {
+    width: 387px;
+  }
+}
+
+.rev__icon-box {
+  width: 14px;
+  height: 14px;
+  margin-bottom: 24px;
+}
+
+.rev__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.rev__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--black-color);
+  margin-bottom: 20px;
+
+}
+
+.rev__author {
+  font-family: var(--font-jakarta);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--black-color);
+  border-top: 1px solid rgba(15, 32, 68, 0.08);
+  padding-top: 16px;
+}
+
+.rev__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+
+  @media only screen and (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.rev__btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background-color: var(--white-color);
+
+    .rev__btn-icon {
+      color: var(--black-color);
+    }
+  }
+}
+
+.rev__btn-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--white-color);
+  transition: color 0.3s ease;
+}
+
+.rev__pagination {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.rev__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rev__dot.active {
+  width: 6px;
+  height: 6px;
+  background-color: var(--white-color);
+}
