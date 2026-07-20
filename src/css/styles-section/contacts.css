@@ -1,0 +1,104 @@
+.contact {
+  padding: 50px 0;
+
+  @media only screen and (min-width: 1440px) {
+    padding: 100px 0;
+  }
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    /* Забезпечує правильну відстань між текстом та картинкою */
+  }
+}
+
+.contact__content {
+  width: 100%;
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 535px;
+    /* Обмежує розповзання тексту на великих моніторах */
+  }
+}
+
+.contact__title {
+  font-family: var(--font-jakarta);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.05em;
+  color: var(--black-color);
+  margin-bottom: 30px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 52px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.contact__text {
+  font-family: var(--font-inter);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 30px;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
+}
+
+.contact__email {
+  display: inline-block;
+  font-family: var(--font-jakarta);
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d9e8f;
+  /* Фірмовий бірюзово-зелений колір */
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 34px;
+  }
+}
+
+/* Контейнер figure для зображення */
+.contact__image-box {
+  margin: 0;
+  /* Обов'язково скидаємо вбудовані відступи браузера для figure */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 632px;
+    picture {
+        display: block;
+        width: 100%;
+      }
+  }
+}
+
+.contact__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 40px;
+  /* Велике плавне заокруглення кутів картинки */
+}
