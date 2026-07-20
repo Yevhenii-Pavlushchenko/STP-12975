@@ -27,7 +27,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  padding-top: 79px;
+  padding-top: 60px;
   font-family: var(--font-inter);
   color: var(--black-color);
   background-color: var(--white-color);
