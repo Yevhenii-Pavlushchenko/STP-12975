@@ -1,0 +1,104 @@
+.ftr_footer {
+  padding: 40px 0;
+  background-color: var(--black-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media only screen and (min-width: 1440px) {
+    padding: 30px 0;
+  }
+}
+
+.ftr_footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+
+  @media only screen and (min-width: 1440px) {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    gap: 0;
+  }
+}
+
+.ftr_footer-logo {
+  display: inline-block;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  /* Розгортаємо picture на повну ширину посилання */
+  picture {
+    display: block;
+    width: 100%;
+  }
+}
+
+.ftr_footer-logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 208px;
+
+  @media only screen and (min-width: 1440px) {
+    max-width: 292px;
+  }
+}
+
+/* Очищений від дефолтних маркерів список списків */
+.ftr_footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @media only screen and (min-width: 1440px) {
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.ftr_footer-item {
+  display: block;
+}
+
+.ftr_footer-link {
+  font-family: var(--font-jakarta);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--white-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  @media only screen and (min-width: 1440px) {
+      font-size: 20px;
+    }
+
+  &:hover {
+    color: #0d9e8f;
+  }
+}
+
+.ftr_footer-copyright {
+  margin: 0;
+}
+
+.ftr_footer-copy-main {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.5;
+  color: var(--white-color);
+  display: block;
+
+  @media only screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+}

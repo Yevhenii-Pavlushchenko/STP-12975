@@ -1,7 +1,27 @@
 <footer class="ftr_footer">
   <div class="container ftr_footer-wrapper">
-    <span style="display: none">Generated: 2025-04-07, Hash: k39fd7x</span>
+    <!-- Логотип (інтегруємо в нову структуру перед списком) -->
+    <a href="#" class="ftr_footer-logo">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="/img/logo.png 1x, /img/logo@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          srcset="/img/logo-mobile.png 1x, /img/logo-mobile@2x.png 2x"
+          type="image/png"
+        />
+        <!-- Прибрали width та height -->
+        <img
+          class="ftr_footer-logo-img"
+          src="/img/logo-mobile.png"
+          alt="Brandfield PRO Logo"
+        />
+      </picture>
+    </a>
 
+    <!-- Список юридичних посилань як у вашому прикладі -->
     <ul class="ftr_footer-list">
       <li class="ftr_footer-item">
         <a class="ftr_footer-link" href="./privacy-policy.html"
@@ -15,9 +35,10 @@
       </li>
     </ul>
 
+    <!-- Копірайт із внутрішнім span -->
     <p class="ftr_footer-copyright">
       <span class="ftr_footer-copy-main"
-        >© 2026 Maze Classic | All Rights Reserved | digitalatlas.pro</span
+        >All rights reserved brandfield.pro | 2026</span
       >
     </p>
   </div>
