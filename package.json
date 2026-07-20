@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/STP-12454-digitalatlas.pro/",
+    "build": "vite build --base=./",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview"
   },
