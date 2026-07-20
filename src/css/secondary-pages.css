@@ -41,11 +41,20 @@ padding-top: 0;
 
   @media only screen and (min-width: 1440px) {
     align-self: flex-start;
+    top: 10px;
+    left: 250px;
   }
 }
 
 .scpg_back-icon {
   fill: var(--black-color);
+  width: 24px;
+  height: 24px;
+
+  @media only screen and (min-width: 1440px) {
+      width: 41px;
+        height: 41px;
+    }
   &:hover,
     &:focus {
       fill: var(--accent-color);
