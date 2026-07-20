@@ -32,7 +32,6 @@
     opacity: 0.8;
   }
 
-  /* Розгортаємо picture на повну ширину посилання */
   picture {
     display: block;
     width: 100%;
@@ -50,7 +49,6 @@
   }
 }
 
-/* Очищений від дефолтних маркерів список списків */
 .ftr_footer-list {
   list-style: none;
   margin: 0;

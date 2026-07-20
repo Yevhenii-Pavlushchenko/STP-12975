@@ -9,34 +9,25 @@
 }
 .rev__glow {
   position: absolute;
-  /* Центруємо елемент рівно по середині секції */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  /* Параметри форми з Фігми (пропорції еліпса 1139x385) */
   width: 280px;
   height: 150px;
   background-color: #334c82;
   border-radius: 50%;
   filter: blur(60px);
-  /* М'яке розмиття для мобільних */
-
   z-index: 1;
-  /* Лежить під контентом */
   pointer-events: none;
   will-change: transform;
 
   @media only screen and (min-width: 1440px) {
-    /* Точні розміри та розмиття з вашого скриншоту Фігми */
     width: 1140px;
     height: 550px;
     filter: blur(154px);
   }
 }
 
-/* Переконуємося, що текст та картки лежать вище свічення */
-.rev__title,
 .rev__slider {
   position: relative;
   z-index: 2;

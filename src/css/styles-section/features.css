@@ -64,7 +64,6 @@
   flex-shrink: 0;
   scroll-snap-align: center;
   width: 310px;
-  /* Фіксована ширина для мобільного скролу */
   height: 250px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
   border: 1px solid rgba(15, 32, 68, 0.08);
@@ -73,7 +72,6 @@
 
   @media only screen and (min-width: 1440px) {
     width: 100%;
-    /* Дозволяємо сітці керувати шириною */
     height: 227px;
     grid-column: span 2;
 
@@ -126,13 +124,11 @@
   color: var(--text-color);
 }
 
-/* Синхронізовані контроли (як у .rev, але під світлий фон) */
 .features__controls {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  /* Зменшили з 20px до 10px, як у .rev */
   margin-top: 40px;
 
   @media only screen and (min-width: 1440px) {
@@ -167,7 +163,6 @@
   transition: color 0.3s ease;
 }
 
-/* Очищена пагінація один-в-один як у .rev, прибрали сміття від Swiper */
 .features__pagination {
   display: flex;
   align-items: center;
@@ -179,7 +174,6 @@
   height: 4px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.2);
-  /* Темна прозора крапка для світлого фону */
   cursor: pointer;
   transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
 }

@@ -16,7 +16,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    /* Забезпечує правильну відстань між текстом та картинкою */
   }
 }
 
@@ -25,7 +24,6 @@
 
   @media only screen and (min-width: 1440px) {
     max-width: 535px;
-    /* Обмежує розповзання тексту на великих моніторах */
   }
 }
 
@@ -64,7 +62,6 @@
   font-size: 20px;
   font-weight: 700;
   color: #0d9e8f;
-  /* Фірмовий бірюзово-зелений колір */
   text-decoration: none;
   transition: opacity 0.3s ease;
 
@@ -77,10 +74,8 @@
   }
 }
 
-/* Контейнер figure для зображення */
 .contact__image-box {
   margin: 0;
-  /* Обов'язково скидаємо вбудовані відступи браузера для figure */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -100,5 +95,4 @@
   height: auto;
   object-fit: cover;
   border-radius: 40px;
-  /* Велике плавне заокруглення кутів картинки */
 }

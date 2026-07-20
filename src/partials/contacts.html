@@ -12,22 +12,18 @@
       >
     </div>
 
-    <!-- Замінили контейнер на figure для кращої семантики медіа-контенту -->
     <figure class="contact__image-box">
       <picture>
-        <!-- Десктопні зображення (1440px+) -->
         <source
           media="(min-width: 1440px)"
           srcset="img/contact/contact.png 1x, img/contact/contact@2x.png 2x"
         />
-        <!-- Мобільні зображення (за замовчуванням) -->
         <source
           srcset="
             img/contact/contact-mob.png    1x,
             img/contact/contact-mob@2x.png 2x
           "
         />
-        <!-- Фолбек для старих браузерів -->
         <img
           src="img/contact/contact.png"
           alt="Brandfield Pro Community"
